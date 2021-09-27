@@ -1,0 +1,99 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/other/splash",
+			"style":{
+				"navigationStyle":"custom"
+			}
+		},
+
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarBackgroundColor": "#478BF9",
+				"enablePullDownRefresh":true,
+				"app-plus": {
+					"titleNView": {
+						"bounce": "none",
+						"searchInput": {
+							"align": "left",
+							"placeholder": "搜索工单号或车型或车牌",
+							"placeholderColor": "#CCCCCC",
+							"borderRadius": "24rpx",
+							"backgroundColor": "transparent"
+						},
+						"buttons": [{
+							"text": "协议模板",
+							"fontSize": "28rpx",
+							"color": "#ffffff",
+							"width": "auto"
+						}]
+
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/history/history_index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/other/login",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"backgroundColorTop":"#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3180FF",
+		"borderStyle": "black",
+		"height": "54rpx",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/iv_index_task_unselected.png",
+				"selectedIconPath": "static/iv_index_task_selected.png",
+				"text": "任务"
+			},
+			{
+				"pagePath": "pages/history/history_index",
+				"iconPath": "static/iv_index_history_unselelcted.png",
+				"selectedIconPath": "static/iv_index_history_selected.png",
+				"text": "历史"
+			}
+			// {
+			// 	"pagePath": "pages/tabBar/extUI/extUI",
+			// 	"iconPath": "static/extui.png",
+			// 	"selectedIconPath": "static/extuiHL.png",
+			// 	"text": "消息"
+			// }, {
+			// 	"pagePath": "pages/tabBar/template/template",
+			// 	"iconPath": "static/template.png",
+			// 	"selectedIconPath": "static/templateHL.png",
+			// 	"text": "统计"
+			// },
+			// {
+			// 	"pagePath": "pages/tabBar/template/template",
+			// 	"iconPath": "static/templaindex_te.png",
+			// 	"selectedIconPath": "static/templateHL.png",
+			// 	"text": "我的index_"
+			// }
+		]
+	}
+}
