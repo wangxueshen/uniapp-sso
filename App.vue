@@ -5,7 +5,7 @@
 		},
 		onLaunch: function() {
 			console.log('App Launch')
-			plus.navigator.closeSplashscreen()
+			
 
 			if (process.env.NODE_ENV === 'development') {
 

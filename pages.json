@@ -11,7 +11,7 @@
 			"path": "pages/home/home",
 			"style": {
 				"navigationBarBackgroundColor": "#478BF9",
-				"enablePullDownRefresh":true,
+				
 				"app-plus": {
 					"titleNView": {
 						"bounce": "none",
